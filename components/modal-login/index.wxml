@@ -1,0 +1,15 @@
+<view class="popup">
+    <view class="popup-mask"></view>
+    <view class="popup-content">
+        <view class="box">
+            <view class="title">登录</view>
+            <view class="form">
+                <form>
+                    <input class="input" placeholder="用户名" />
+                    <input class="input" placeholder="密码" />
+                    <button class="btn">登录</button>
+                </form>
+            </view>
+        </view>
+    </view>
+</view>

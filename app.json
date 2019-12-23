@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "fiora聊天室",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#333333",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "聊天",
+        "iconPath": "images/icon_chat.png",
+        "selectedIconPath": "images/icon_chat.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "images/icon_mine.png",
+        "selectedIconPath": "images/icon_mine.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "custom-image": "/components/custom-image/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

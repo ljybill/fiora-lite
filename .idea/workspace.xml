@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="67ed9b5b-8ca5-48ce-905c-30834d415d85" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Less File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V9yZSXaNv338UZ5LWeXt1ZZrDz" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67ed9b5b-8ca5-48ce-905c-30834d415d85" name="Default Changelist" comment="" />
+      <created>1576679660725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576679660725</updated>
+      <workItem from="1576679661849" duration="1214000" />
+      <workItem from="1576758153044" duration="3997000" />
+      <workItem from="1576844563079" duration="4000" />
+      <workItem from="1576844568257" duration="7000" />
+      <workItem from="1576844575953" duration="6045000" />
+      <workItem from="1576931766474" duration="1659000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="163" key="#Configure_Path_Variables" timestamp="1576931823207">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state x="440" y="163" key="#Configure_Path_Variables/0.23.1680.952@0.23.1680.952" timestamp="1576931823207" />
+    <state x="426" y="277" key="EditFileWatcherDialog" timestamp="1576849434497">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state x="426" y="277" key="EditFileWatcherDialog/0.23.1680.952@0.23.1680.952" timestamp="1576849434497" />
+  </component>
+</project>

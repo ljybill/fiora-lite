@@ -1,0 +1,56 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+.page .banner {
+  flex: none;
+  margin-bottom: 80rpx;
+}
+.page .menu-list {
+  flex: 1;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.user-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 24rpx 0;
+}
+.user-name {
+  font-size: 36rpx;
+}
+.user-tag {
+  display: inline-block;
+  padding: 0 4rpx;
+  border-radius: 4rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  background-color: #c96202;
+}
+.menu-list {
+  padding: 0 24rpx;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 3;
+  font-size: 36rpx;
+  border-bottom: 0.5px solid #eee;
+}
+.menu-item:last-of-type {
+  border-bottom: none;
+}
+.menu-item > text {
+  font-size: inherit;
+}
+.menu-item > image {
+  width: 36rpx;
+  height: 36rpx;
+}

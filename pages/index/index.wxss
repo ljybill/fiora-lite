@@ -1,0 +1,34 @@
+.message-list {
+  flex: 1;
+  position: relative;
+}
+.item {
+  display: flex;
+  padding: 24rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.item:last-of-type {
+  border-bottom: none;
+}
+.item .avatar {
+  flex: none;
+  margin-right: 24rpx;
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.item .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.item .content .name {
+  flex: 1;
+  font-size: 36rpx;
+  line-height: 1;
+}
+.item .content .last-message {
+  font-size: 30rpx;
+  line-height: 1;
+}

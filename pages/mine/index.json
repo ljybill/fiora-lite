@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "modal-login": "/components/modal-login/index"
+  }
+}

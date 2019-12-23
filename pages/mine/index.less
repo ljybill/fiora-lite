@@ -1,0 +1,69 @@
+.page {
+    display: flex;
+    flex-direction: column;
+
+    .banner {
+        flex: none;
+        margin-bottom: 80rpx;
+    }
+
+    .menu-list {
+        flex: 1;
+    }
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &-avatar {
+        width: 160rpx;
+        height: 160rpx;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 24rpx 0;
+    }
+
+    &-name {
+        font-size: 36rpx;
+    }
+
+    &-tag {
+        display: inline-block;
+        padding: 0 4rpx;
+        border-radius: 4rpx;
+        font-size: 30rpx;
+        color: #FFFFFF;
+        background-color: rgb(201, 98, 2);
+    }
+}
+
+.menu {
+    &-list {
+        padding: 0 24rpx;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 3;
+        font-size: 36rpx;
+        border-bottom: 0.5px solid #eee;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &>text {
+            font-size: inherit;
+        }
+
+        &>image {
+            width: 36rpx;
+            height: 36rpx;
+        }
+    }
+}
