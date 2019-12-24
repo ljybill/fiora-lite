@@ -26,11 +26,23 @@
 }
 .popup-content .box {
   position: relative;
-  padding: 36rpx 24rpx;
+  padding: 36rpx 0;
 }
 .title {
   text-align: center;
   font-size: 36rpx;
+}
+.tab {
+  display: flex;
+  justify-content: center;
+}
+.tab-item {
+  flex: none;
+  margin: 0 24rpx;
+}
+.tab-item.active {
+  color: #108ee9;
+  border-bottom: 1px solid #108ee9;
 }
 .form {
   margin: 24rpx 0 0;
@@ -42,7 +54,18 @@
 }
 .form .btn {
   margin-top: 24rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #108ee9;
+  color: #fff;
 }
 .form .btn::after {
   content: none;
+}
+.swiper {
+  height: 320rpx;
+}
+.swiper-item {
+  box-sizing: border-box;
+  padding: 0 24rpx;
 }

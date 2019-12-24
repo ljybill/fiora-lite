@@ -1,3 +1,5 @@
+@import '../../style/theme.less';
+
 .popup {
     position: fixed;
     top: 0;
@@ -27,7 +29,7 @@
 
         .box {
             position: relative;
-            padding: 36rpx 24rpx;
+            padding: 36rpx 0;
         }
     }
 }
@@ -35,6 +37,21 @@
 .title {
     text-align: center;
     font-size: 36rpx;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+        flex: none;
+        margin: 0 24rpx;
+
+        &.active {
+            color: @color-primary;
+            border-bottom: 1px solid @color-primary;
+        }
+    }
 }
 
 .form {
@@ -48,9 +65,22 @@
 
     .btn {
         margin-top: 24rpx;
+        height: 80rpx;
+        line-height: 80rpx;
+        background-color: @color-primary;
+        color: #fff;
 
         &::after {
             content: none;
         }
+    }
+}
+
+.swiper {
+    height: 320rpx;
+
+    &-item {
+        box-sizing: border-box;
+        padding: 0 24rpx;
     }
 }
