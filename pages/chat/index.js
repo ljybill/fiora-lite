@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    messageList: []
+    messageList: [],
+    scrollTop: 0,
+    // 用于重置input内容
+    messageContent: '',
   },
 
   /**
@@ -84,6 +87,23 @@ Page({
     this.setData({
       messageList: historyList,
     })
+    this.scrollGoBottom();
+  },
+
+  handleSendMessage(evt) {
+    const { message } = evt.detail.value;
+    if (!message.trim().length) {
+      return;
+    }
+
+    this.data.messageList.push({
+      content: message,
+    })
+    this.setData({
+      messageList: this.data.messageList,
+      messageContent: '',
+    })
+    this.scrollGoBottom();
   },
 
   // service
@@ -91,6 +111,8 @@ Page({
     return messageList[0].messages;
   },
   scrollGoBottom() {
-    // TODO: 设置滚动条到最下面
+    this.setData({
+      scrollTop: 9999,
+    })
   }
 })

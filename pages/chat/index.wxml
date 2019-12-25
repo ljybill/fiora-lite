@@ -2,14 +2,18 @@
   <image class="bg" mode="center" src="/images/bg-chat.jpg" />
   <view class="content">
     <view class="scroll-box">
-      <scroll-view scroll-y class="scroll">
+      <scroll-view scroll-y class="scroll" scroll-top="{{scrollTop}}">
         <message-item wx:for="{{messageList}}" wx:key="{{item._id}}" isMine="{{index === 2}}" data="{{item}}"></message-item>
       </scroll-view>
     </view>
   </view>
-  <view class="form">
-    <custom-image src="http://iph.href.lu/80x80?text=I" width="{{66}}" height="{{66}}"></custom-image>
-    <input class="input" type="text" placeholder="随便聊点啥吧" />
-    <custom-image src="http://iph.href.lu/80x80?text=S" width="{{66}}" height="{{66}}"></custom-image>
-  </view>
+  <form bindsubmit="handleSendMessage">
+    <view class="form">
+      <custom-image src="http://iph.href.lu/80x80?text=I" width="{{66}}" height="{{66}}"></custom-image>
+      <input value="{{messageContent}}" name="message" class="input" type="text" placeholder="随便聊点啥吧" />
+      <button style="padding-left: 0; padding-right: 0;" form-type="submit">
+        <custom-image src="http://iph.href.lu/80x80?text=S" width="{{66}}" height="{{66}}"></custom-image>
+      </button>
+    </view>
+  </form>
 </view>

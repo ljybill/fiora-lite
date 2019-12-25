@@ -38,6 +38,7 @@
   padding: 6rpx 8rpx;
   border-radius: 8rpx;
   border-top-left-radius: 0;
+  font-size: 28rpx;
 }
 .message .content .text::before {
   content: "";

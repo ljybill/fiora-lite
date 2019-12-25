@@ -30,5 +30,5 @@
   box-sizing: border-box;
   line-height: 48rpx;
   height: 66rpx;
-  font-size: 36rpx;
+  font-size: 28rpx;
 }

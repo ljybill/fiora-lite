@@ -5,12 +5,12 @@
   </view>
   <view class="content">
     <view class="meta">
-      <text class="tag">{{data.from.tag}}</text>
+      <text wx:if="{{data.from.tag}}" class="tag">{{data.from.tag}}</text>
       <text class="username">{{data.from.username}}</text>
       <text class="time">{{date.friendly(data.createTime)}}</text>
     </view>
     <view class="text">
-      <text class="text_text">{{data.content}}</text>
+      <view class="text_text">{{data.content}}</view>
     </view>
   </view>
 </view>
