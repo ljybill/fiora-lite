@@ -42,6 +42,8 @@ Component({
         })
         return;
       }
+
+      this.triggerEvent('login', evt.detail.value)
     },
     handleRegisterSubmit(evt) {
       if (!this._checkFormValidity(evt.detail.value)) {
@@ -51,6 +53,8 @@ Component({
         })
         return;
       }
+
+      this.triggerEvent('register', evt.detail.value)
     }
   }
 });

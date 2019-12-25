@@ -1,7 +1,7 @@
 <wxs src="../../wxs/date.wxs" module="date" />
 <view class="message {{isMine ? 'mine' : ''}}">
   <view class="avatar">
-    <custom-image src="https://cdn.suisuijiang.com/Avatar/5adad39655703565e79043de_1533694699347?imageView2/3/w/88/h/88" width="{{88}}" height="{{88}}"></custom-image>
+    <custom-image src="{{data.from.avatar}}" width="{{88}}" height="{{88}}"></custom-image>
   </view>
   <view class="content">
     <view class="meta">

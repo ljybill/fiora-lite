@@ -6,15 +6,15 @@
             </view>
             <view class="user-info">
                 <view class="user-name">{{userInfo.username}}</view>
-                <view class="user-tag">{{userInfo.tag}}</view>
+                <view class="user-tag">{{userInfo.tag ? userInfo.tag : '暂无Tag'}}</view>
             </view>
         </view>
     </view>
     <view class="menu-list">
-        <view class="menu-item" wx:for="{{menuList}}" wx:key="{{item.text}}">
+        <view bindtap="handleItemTap" data-url="{{item.url}}" class="menu-item" wx:for="{{menuList}}" wx:key="{{item.text}}">
             <text>{{item.text}}</text>
             <image src="/images/icon_arrow-right.png" />
         </view>
     </view>
 </view>
-<modal-login wx:if="{{!isLogin}}"></modal-login>
+<modal-login bindlogin="handleLogin" bindregister="handleRegister" wx:if="{{!isLogin}}"></modal-login>
