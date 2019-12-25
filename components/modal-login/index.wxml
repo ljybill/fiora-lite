@@ -16,16 +16,16 @@
                 <swiper class="swiper" duration="{{300}}" current="{{currentIdx}}" bindchange="handleChange">
                     <swiper-item class="swiper-item">
                         <form bindsubmit="handleLoginSubmit">
-                            <input class="input" placeholder="用户名" />
-                            <input class="input" placeholder="密码" />
-                            <button class="btn">登录</button>
+                            <input name="username" class="input" placeholder="用户名" />
+                            <input name="password" class="input" placeholder="密码" />
+                            <button form-type="submit" class="btn">登录</button>
                         </form>
                     </swiper-item>
                     <swiper-item class="swiper-item">
                         <form bindsubmit="handleRegisterSubmit">
-                            <input class="input" placeholder="用户名" />
-                            <input class="input" placeholder="密码" />
-                            <button class="btn">注册</button>
+                            <input name="username" class="input" placeholder="用户名" />
+                            <input name="password" class="input" placeholder="密码" />
+                            <button form-type="submit" class="btn">注册</button>
                         </form>
                     </swiper-item>
                 </swiper>

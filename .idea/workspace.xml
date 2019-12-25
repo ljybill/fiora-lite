@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ed9b5b-8ca5-48ce-905c-30834d415d85" name="Default Changelist" comment="" />
+    <list default="true" id="67ed9b5b-8ca5-48ce-905c-30834d415d85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1V9yZSXaNv338UZ5LWeXt1ZZrDz" />
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
@@ -26,9 +32,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -63,6 +71,8 @@
       <workItem from="1576844568257" duration="7000" />
       <workItem from="1576844575953" duration="6045000" />
       <workItem from="1576931766474" duration="1659000" />
+      <workItem from="1577166490017" duration="425000" />
+      <workItem from="1577236112609" duration="73000" />
     </task>
     <servers />
   </component>
@@ -70,13 +80,27 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="163" key="#Configure_Path_Variables" timestamp="1576931823207">
-      <screen x="0" y="23" width="1680" height="952" />
+    <state x="670" y="220" key="#Configure_Path_Variables" timestamp="1577236132605">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="440" y="163" key="#Configure_Path_Variables/0.23.1680.952@0.23.1680.952" timestamp="1576931823207" />
-    <state x="426" y="277" key="EditFileWatcherDialog" timestamp="1576849434497">
-      <screen x="0" y="23" width="1680" height="952" />
+    <state x="670" y="220" key="#Configure_Path_Variables/0.23.2560.1337@0.23.2560.1337" timestamp="1577236132605" />
+    <state x="880" y="357" key="#File_Watchers" timestamp="1577236172625">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="880" y="357" key="#File_Watchers/0.23.2560.1337@0.23.2560.1337" timestamp="1577236172625" />
+    <state x="649" y="380" key="EditFileWatcherDialog" timestamp="1577236170763">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="426" y="277" key="EditFileWatcherDialog/0.23.1680.952@0.23.1680.952" timestamp="1576849434497" />
+    <state x="649" y="380" key="EditFileWatcherDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1577236170763" />
+    <state x="789" y="330" key="SettingsEditor" timestamp="1577166893927">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1577166893927" />
+    <state x="936" y="432" width="687" height="518" key="find.popup" timestamp="1577236157661">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="936" y="432" width="687" height="518" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1577236157661" />
   </component>
 </project>

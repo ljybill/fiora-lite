@@ -30,11 +30,27 @@ Component({
         });
       }
     },
+    _checkFormValidity(value) {
+      const { username, password } = value;
+      return username && password;
+    },
     handleLoginSubmit(evt) {
-      console.log(evt);
+      if (!this._checkFormValidity(evt.detail.value)) {
+        wx.showToast({
+          title: '用户名或密码不可为空',
+          icon: 'none',
+        })
+        return;
+      }
     },
     handleRegisterSubmit(evt) {
-      console.log(evt);
+      if (!this._checkFormValidity(evt.detail.value)) {
+        wx.showToast({
+          title: '用户名或密码不可为空',
+          icon: 'none',
+        })
+        return;
+      }
     }
   }
 });
