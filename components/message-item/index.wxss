@@ -1,0 +1,22 @@
+.message {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+.message .avatar {
+  width: 88rpx;
+  height: 88rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.message .content .meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.message.mine {
+  flex-direction: row-reverse;
+}
+.message.mine .content .meta {
+  flex-direction: row-reverse;
+}

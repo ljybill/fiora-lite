@@ -50,6 +50,13 @@
 					"id": -1,
 					"name": "pages/mine/index",
 					"pathName": "pages/mine/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chat/index",
+					"pathName": "pages/chat/index",
 					"scene": null
 				}
 			]

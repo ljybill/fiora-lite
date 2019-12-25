@@ -25,7 +25,7 @@ Page({
         url: ""
       }
     ],
-    isLogin: false,
+    isLogin: true,
   },
 
   /**

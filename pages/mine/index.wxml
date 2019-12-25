@@ -17,4 +17,4 @@
         </view>
     </view>
 </view>
-<modal-login></modal-login>
+<modal-login wx:if="{{!isLogin}}"></modal-login>

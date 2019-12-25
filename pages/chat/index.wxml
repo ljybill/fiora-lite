@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="content">
+    <view class="scroll-box">
+      <scroll-view scroll-y class="scroll">
+        <message-item wx:for="abadfafewahfuiwabadfafewahfuiw" isMine="{{index === 2}}"></message-item>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="form">
+    <custom-image src="http://iph.href.lu/80x80?text=I" width="{{66}}" height="{{66}}"></custom-image>
+    <input class="input" type="text" placeholder="随便聊点啥吧" />
+    <custom-image src="http://iph.href.lu/80x80?text=S" width="{{66}}" height="{{66}}"></custom-image>
+  </view>
+</view>

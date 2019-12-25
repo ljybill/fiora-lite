@@ -1,0 +1,41 @@
+.message {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+
+  .avatar {
+    width: 88rpx;
+    height: 88rpx;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .content {
+    .meta {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .tag {
+      }
+
+      .username {
+      }
+
+      .time {
+      }
+    }
+
+    .text {
+    }
+  }
+
+  &.mine {
+    flex-direction: row-reverse;
+
+    .content {
+      .meta {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
