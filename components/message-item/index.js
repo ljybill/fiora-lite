@@ -7,6 +7,10 @@ Component({
     isMine: {
       type: Boolean,
       value: false,
+    },
+    data: {
+      type: Object,
+      value: {},
     }
   },
 

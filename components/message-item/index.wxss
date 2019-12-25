@@ -8,15 +8,76 @@
   height: 88rpx;
   overflow: hidden;
   border-radius: 50%;
+  margin-right: 24rpx;
 }
 .message .content .meta {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 24rpx;
+  line-height: 32rpx;
+}
+.message .content .meta .tag {
+  background-color: #0c107c;
+  color: #fff;
+  padding: 0 4rpx;
+  line-height: inherit;
+}
+.message .content .meta .username {
+  margin: 0 8rpx;
+  line-height: inherit;
+}
+.message .content .meta .time {
+  color: #666;
+  line-height: inherit;
+}
+.message .content .text {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding: 6rpx 8rpx;
+  border-radius: 8rpx;
+  border-top-left-radius: 0;
+}
+.message .content .text::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 7px 15px 0;
+  border-color: transparent rgba(255, 255, 255, 0.8) transparent transparent;
+  position: absolute;
+  top: 0;
+  left: -7px;
+}
+.message .content .text .text_text {
+  color: #555;
 }
 .message.mine {
   flex-direction: row-reverse;
 }
+.message.mine .avatar {
+  margin-left: 24rpx;
+  margin-right: 0;
+}
 .message.mine .content .meta {
   flex-direction: row-reverse;
+}
+.message.mine .content .text {
+  border-top-left-radius: 8rpx;
+  border-top-right-radius: 0;
+}
+.message.mine .content .text::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0 15px 7px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: -7px;
 }

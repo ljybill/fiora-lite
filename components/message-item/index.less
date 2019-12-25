@@ -1,4 +1,6 @@
 .message {
+  @background-color: rgba(255, 255, 255, 0.8);
+
   display: flex;
   flex-direction: row;
   margin-bottom: 20rpx;
@@ -8,6 +10,7 @@
     height: 88rpx;
     overflow: hidden;
     border-radius: 50%;
+    margin-right: 24rpx;
   }
 
   .content {
@@ -15,26 +18,80 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      font-size: 24rpx;
+      line-height: 32rpx;
       .tag {
+        background-color: rgb(12, 16, 124);
+        color: #fff;
+        padding: 0 4rpx;
+        line-height: inherit;
       }
 
       .username {
+        margin: 0 8rpx;
+        line-height: inherit;
       }
 
       .time {
+        color: #666;
+        line-height: inherit;
       }
     }
 
     .text {
+      display: inline-block;
+      background-color: @background-color;
+      position: relative;
+      padding: 6rpx 8rpx;
+      border-radius: 8rpx;
+      border-top-left-radius: 0;
+      &::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0px 7px 15px 0;
+        border-color: transparent @background-color transparent transparent;
+        position: absolute;
+        top: 0;
+        left: -7px;
+      }
+
+      .text_text {
+        color: #555;
+      }
     }
   }
 
   &.mine {
     flex-direction: row-reverse;
 
+    .avatar {
+      margin-left: 24rpx;
+      margin-right: 0;
+    }
     .content {
       .meta {
         flex-direction: row-reverse;
+      }
+
+      .text {
+        border-top-left-radius: 8rpx;
+        border-top-right-radius: 0;
+        &::before {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0px 0 15px 7px;
+          border-color: transparent transparent transparent @background-color;
+          position: absolute;
+          top: 0;
+          left: auto;
+          right: -7px;
+        }
       }
     }
   }

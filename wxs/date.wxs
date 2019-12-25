@@ -1,0 +1,13 @@
+var friendly = function (timeString) {
+  var timestamp = Date.parse(timeString);
+  var date = getDate(timestamp);
+  var prefixString = '';
+  if(date.getDate() !== getDate(Date.now()).getDate()){
+    prefixString = (date.getMonth() + 1) + '/' + date.getDate() + ' '
+  }
+  return prefixString + date.getHours() + ':' + date.getMinutes();
+};
+
+module.exports = {
+  friendly: friendly
+};

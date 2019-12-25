@@ -1,8 +1,9 @@
 <view class="page">
+  <image class="bg" mode="center" src="/images/bg-chat.jpg" />
   <view class="content">
     <view class="scroll-box">
       <scroll-view scroll-y class="scroll">
-        <message-item wx:for="abadfafewahfuiwabadfafewahfuiw" isMine="{{index === 2}}"></message-item>
+        <message-item wx:for="{{messageList}}" wx:key="{{item._id}}" isMine="{{index === 2}}" data="{{item}}"></message-item>
       </scroll-view>
     </view>
   </view>

@@ -54,9 +54,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 1,
 					"name": "pages/chat/index",
 					"pathName": "pages/chat/index",
+					"query": "roomId=123",
 					"scene": null
 				}
 			]

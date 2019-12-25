@@ -1,15 +1,16 @@
+<wxs src="../../wxs/date.wxs" module="date" />
 <view class="message {{isMine ? 'mine' : ''}}">
   <view class="avatar">
     <custom-image src="https://cdn.suisuijiang.com/Avatar/5adad39655703565e79043de_1533694699347?imageView2/3/w/88/h/88" width="{{88}}" height="{{88}}"></custom-image>
   </view>
   <view class="content">
     <view class="meta">
-      <text class="tag">sima</text>
-      <text class="username">lichenglong</text>
-      <text class="time">09:28</text>
+      <text class="tag">{{data.from.tag}}</text>
+      <text class="username">{{data.from.username}}</text>
+      <text class="time">{{date.friendly(data.createTime)}}</text>
     </view>
     <view class="text">
-      <text class="text_text">这是我目前的努力成果</text>
+      <text class="text_text">{{data.content}}</text>
     </view>
   </view>
 </view>
