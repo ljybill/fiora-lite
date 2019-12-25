@@ -3,7 +3,7 @@
   <view class="content">
     <view class="scroll-box">
       <scroll-view scroll-y class="scroll" scroll-top="{{scrollTop}}">
-        <message-item wx:for="{{messageList}}" wx:key="{{item._id}}" isMine="{{index === 2}}" data="{{item}}"></message-item>
+        <message-item wx:for="{{messageList}}" wx:key="{{item._id}}" isMine="{{username === item.from.username}}" data="{{item}}"></message-item>
       </scroll-view>
     </view>
   </view>

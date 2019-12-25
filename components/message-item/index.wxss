@@ -4,6 +4,7 @@
   margin-bottom: 20rpx;
 }
 .message .avatar {
+  flex: none;
   width: 88rpx;
   height: 88rpx;
   overflow: hidden;
@@ -54,6 +55,7 @@
 }
 .message .content .text .text_text {
   color: #555;
+  word-break: break-all;
 }
 .message.mine {
   flex-direction: row-reverse;
@@ -61,6 +63,9 @@
 .message.mine .avatar {
   margin-left: 24rpx;
   margin-right: 0;
+}
+.message.mine .content {
+  text-align: right;
 }
 .message.mine .content .meta {
   flex-direction: row-reverse;

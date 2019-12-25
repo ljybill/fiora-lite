@@ -1,4 +1,7 @@
+import { EVENT_MESSAGE } from '../../event';
 import { messageList } from '../../model/mock';
+import fetch from '../../utils/fetch';
+const app = getApp();
 
 Page({
   /**
@@ -9,6 +12,7 @@ Page({
     scrollTop: 0,
     // 用于重置input内容
     messageContent: '',
+    username: '',
   },
 
   /**
@@ -16,6 +20,9 @@ Page({
    */
   onLoad: function (options) {
     const { roomId } = options;
+    this.roomId = roomId;
+    this._onMessage = this.onMessage.bind(this);
+
     this.initRoom(roomId);
   },
 
@@ -44,7 +51,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    app.unbind(EVENT_MESSAGE, this._onMessage)
   },
 
   /**
@@ -83,11 +90,7 @@ Page({
       })
     }
 
-    const historyList = this.getMessageList();
-    this.setData({
-      messageList: historyList,
-    })
-    this.scrollGoBottom();
+    app.bind(EVENT_MESSAGE, this._onMessage);
   },
 
   handleSendMessage(evt) {
@@ -96,13 +99,23 @@ Page({
       return;
     }
 
-    this.data.messageList.push({
-      content: message,
-    })
+    fetch('sendMessage', { to: this.roomId, type: 'text', content: message }).then(res => {
+      app.onMessage(res);
+    });
     this.setData({
-      messageList: this.data.messageList,
       messageContent: '',
     })
+  },
+
+  onMessage() {
+    const list = app.globalData.groupMessage[this.roomId] || [];
+    if (Array.isArray(list)) {
+      this.setData({
+        username: app.globalData.userInfo.username,
+        messageList: list.filter(message => message.type === 'text')
+      });
+    }
+
     this.scrollGoBottom();
   },
 

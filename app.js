@@ -1,6 +1,7 @@
 import socket from './utils/socket';
 import config from './config/index';
 import service from './app.service';
+import { EVENT_MESSAGE } from './event';
 
 App({
   onLaunch: function () {
@@ -19,6 +20,25 @@ App({
     }, () => {
       // TODO: socket连接失败
     });
+
+    socket.getSocket().on('message', this.onMessage)
+  },
+
+  onMessage(res) {
+    console.log('new message');
+    console.log(res);
+
+    if (res.to) {
+      if (!Array.isArray(this.globalData.groupMessage[res.to])) {
+        this.globalData.groupMessage[res.to] = []
+      }
+
+      const o = Object.assign({}, res);
+      delete o.to
+      this.globalData.groupMessage[res.to].push(o);
+
+      this.exec(EVENT_MESSAGE)
+    }
   },
 
   disposs() {

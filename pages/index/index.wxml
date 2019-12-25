@@ -3,7 +3,7 @@
     <view class="scroll-box">
       <scroll-view class="scroll" scroll-y>
         <!-- start:message-item -->
-        <view class="item" wx:for="{{messageList}}" wx:key="{{item._id}}">
+        <view bindtap="handleIntoRoom" data-room-id="{{item._id}}" class="item" wx:for="{{messageList}}" wx:key="{{item._id}}">
           <view class="avatar">
             <custom-image width="{{100}}" height="{{100}}" src="{{item.avatar}}"></custom-image>
           </view>

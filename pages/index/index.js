@@ -33,5 +33,13 @@ Page({
     this.setData({
       messageList: list,
     })
-  }
+  },
+
+  handleIntoRoom(evt) {
+    const { roomId } = evt.currentTarget.dataset;
+
+    wx.navigateTo({
+      url: `/pages/chat/index?roomId=${roomId}`
+    })
+  },
 });
